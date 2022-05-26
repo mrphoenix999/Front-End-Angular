@@ -1,0 +1,35 @@
+<div class="education-container">
+    <div class="education-container-header d-flex justify-content-between">
+        <h1 class="education-container-header--title">Education</h1>
+        <button class="education-container-header--add-btn">
+            <i class="bi bi-plus-circle"></i>
+        </button>
+    </div>
+
+    <div class="education-container-list">
+        <div class="education-container-list__item" *ngFor="let education of educations">
+            <div class="row">
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <img width="200" src="../../../assets/img/fer-logo.jpg" />
+                        </div>
+                        <div class="col-8">
+                            <h1>{{ education.title }}</h1>
+                            <p>{{ education.career }}</p>
+                            <p>{{ education.period }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button class="ml-3">
+                        <i class="bi bi-pencil-fill"></i>
+                    </button>
+                    <button>
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
